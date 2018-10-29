@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 2,delay:0.0,options:[UIViewAnimationOptions.repeat, .curveLinear],animations: {self.sunImage.alpha=0.0
             self.balloonImage.center.x += self.view.bounds.width
         },completion:nil)
-        
+        // withduration:just for the balloon and sun, delay:when sun goes from light to stop ,it will light again without any delay. completion: will refeat again , nothing will happen.
     }
 
     override func didReceiveMemoryWarning() {
